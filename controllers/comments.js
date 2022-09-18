@@ -18,6 +18,7 @@ module.exports = {
       console.log(err);
     }
   },
+  //! Added delete comment method
   deleteComment: async (req, res) => {
     try {
       await Comment.deleteOne({ _id: req.params.commentid })
